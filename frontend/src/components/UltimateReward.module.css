@@ -1,0 +1,49 @@
+.wrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: radial-gradient(circle at left, rgba(245, 185, 61, 0.12), var(--vl-card) 70%);
+  border: 1px solid rgba(245, 185, 61, 0.35);
+  border-radius: var(--vl-radius);
+  padding: 20px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.crownWrap {
+  filter: drop-shadow(0 0 18px rgba(245, 185, 61, 0.5));
+}
+
+.info {
+  flex: 1;
+}
+
+.label {
+  color: var(--vl-purple-light);
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin-bottom: 2px;
+}
+
+.amount {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--vl-text);
+}
+
+.subtitle {
+  color: var(--vl-text-muted);
+  font-size: 0.85rem;
+}
+
+.unlockBadge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--vl-card-border);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}

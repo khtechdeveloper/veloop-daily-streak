@@ -1,0 +1,119 @@
+.card {
+  position: relative;
+  background: var(--vl-card);
+  border: 1px solid var(--vl-card-border);
+  border-radius: var(--vl-radius-sm);
+  padding: 14px 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  min-height: 190px;
+}
+
+.today {
+  border-color: var(--vl-gold);
+  box-shadow: 0 0 0 1px var(--vl-gold), 0 0 18px rgba(245, 185, 61, 0.35);
+}
+
+.claimed {
+  border-color: rgba(34, 197, 94, 0.5);
+}
+
+.ultimate {
+  border-color: rgba(245, 185, 61, 0.6);
+}
+
+.badge {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--vl-gold);
+  color: #241300;
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.badge.vip {
+  background: linear-gradient(90deg, var(--vl-purple), var(--vl-gold));
+  color: #1a1030;
+}
+
+.dayLabel {
+  font-size: 0.75rem;
+  color: var(--vl-text-muted);
+  font-weight: 600;
+}
+
+.iconWrap {
+  margin: 6px 0;
+}
+
+.rewardTitle {
+  font-size: 0.72rem;
+  color: var(--vl-text-muted);
+}
+
+.rewardAmount {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--vl-gold-light);
+}
+
+.rewardSubtitle {
+  font-size: 0.7rem;
+  color: var(--vl-text-muted);
+  margin-bottom: 6px;
+}
+
+.claimBtn {
+  margin-top: auto;
+  width: 100%;
+  background: var(--vl-gold);
+  color: #241300;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 0;
+  font-weight: 700;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.claimBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.claimedTag, .lockedTag, .missedTag {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 6px 0;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.claimedTag {
+  color: var(--vl-green);
+  background: rgba(34, 197, 94, 0.12);
+}
+
+.lockedTag {
+  color: var(--vl-text-muted);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.missedTag {
+  color: #f87171;
+  background: rgba(248, 113, 113, 0.12);
+}

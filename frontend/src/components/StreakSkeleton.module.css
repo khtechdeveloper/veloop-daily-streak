@@ -1,0 +1,38 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.block {
+  background: linear-gradient(90deg, var(--vl-card) 25%, #241640 37%, var(--vl-card) 63%);
+  background-size: 400% 100%;
+  animation: shimmer 1.4s ease infinite;
+  border-radius: var(--vl-radius-sm);
+  border: 1px solid var(--vl-card-border);
+}
+
+.header { height: 56px; margin-bottom: 16px; }
+.hero { height: 120px; margin-bottom: 16px; }
+
+.statsRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.stat { height: 70px; }
+
+.ultimate { height: 200px; margin-bottom: 16px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+}
+.card { height: 170px; }
+
+@keyframes shimmer {
+  0% { background-position: 100% 0; }
+  100% { background-position: 0 0; }
+}

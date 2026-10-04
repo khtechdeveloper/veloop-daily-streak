@@ -1,0 +1,32 @@
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--vl-card);
+  border: 1px solid var(--vl-card-border);
+  border-radius: var(--vl-radius-sm);
+  padding: 12px 14px;
+}
+
+.label {
+  font-size: 0.72rem;
+  color: var(--vl-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.value {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 480px) {
+  .row { grid-template-columns: 1fr; }
+}

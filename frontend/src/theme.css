@@ -1,0 +1,37 @@
+/* VELoop design tokens - dark + purple + gold + green success accents */
+:root {
+  --vl-bg: #0d0715;
+  --vl-bg-elevated: #150c24;
+  --vl-card: #1a1030;
+  --vl-card-border: rgba(168, 120, 255, 0.25);
+  --vl-purple: #7c3aed;
+  --vl-purple-light: #a78bfa;
+  --vl-purple-glow: rgba(124, 58, 237, 0.45);
+  --vl-gold: #f5b93d;
+  --vl-gold-light: #ffd873;
+  --vl-green: #22c55e;
+  --vl-text: #f4f0ff;
+  --vl-text-muted: #b7a9d9;
+  --vl-radius: 16px;
+  --vl-radius-sm: 10px;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #1c0f33 0%, var(--vl-bg) 60%);
+  color: var(--vl-text);
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}

@@ -1,0 +1,49 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 4, 16, 0.75);
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 16px;
+}
+
+.card {
+  background: var(--vl-card);
+  border: 1px solid var(--vl-card-border);
+  border-radius: var(--vl-radius);
+  padding: 32px 28px;
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid rgba(124, 58, 237, 0.25);
+  border-top-color: var(--vl-purple-light);
+  animation: spin 0.9s linear infinite;
+}
+
+.message {
+  font-weight: 600;
+  margin: 6px 0 0;
+}
+
+.hint {
+  font-size: 0.75rem;
+  color: var(--vl-text-muted);
+  margin: 0;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

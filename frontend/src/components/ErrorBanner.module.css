@@ -1,0 +1,21 @@
+.banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(248, 113, 113, 0.12);
+  border: 1px solid rgba(248, 113, 113, 0.4);
+  color: #fca5a5;
+  border-radius: var(--vl-radius-sm);
+  padding: 10px 14px;
+  font-size: 0.85rem;
+  margin-bottom: 16px;
+}
+
+.close {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+}

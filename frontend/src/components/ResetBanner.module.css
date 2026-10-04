@@ -1,0 +1,12 @@
+.banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(124, 58, 237, 0.14);
+  border: 1px solid var(--vl-card-border);
+  color: var(--vl-purple-light);
+  border-radius: var(--vl-radius-sm);
+  padding: 10px 14px;
+  font-size: 0.85rem;
+  margin-bottom: 16px;
+}

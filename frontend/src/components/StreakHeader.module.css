@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.backBtn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--vl-card-border);
+  color: var(--vl-text);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.fire {
+  filter: drop-shadow(0 0 6px rgba(245, 185, 61, 0.6));
+}
+
+.balance {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(124, 58, 237, 0.15);
+  border: 1px solid var(--vl-card-border);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
